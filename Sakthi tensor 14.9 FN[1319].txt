@@ -1,0 +1,413 @@
+Annaconda prompt
+
+
+
+(base) C:\Users\RD>conda create -n tensorflow pip python-3.5
+Solving environment: failed
+
+PackagesNotFoundError: The following packages are not available from current channels:
+
+  - python-3.5
+
+Current channels:
+
+  - https://repo.anaconda.com/pkgs/main/win-64
+  - https://repo.anaconda.com/pkgs/main/noarch
+  - https://repo.anaconda.com/pkgs/free/win-64
+  - https://repo.anaconda.com/pkgs/free/noarch
+  - https://repo.anaconda.com/pkgs/r/win-64
+  - https://repo.anaconda.com/pkgs/r/noarch
+  - https://repo.anaconda.com/pkgs/pro/win-64
+  - https://repo.anaconda.com/pkgs/pro/noarch
+  - https://repo.anaconda.com/pkgs/msys2/win-64
+  - https://repo.anaconda.com/pkgs/msys2/noarch
+
+To search for alternate channels that may provide the conda package you're
+looking for, navigate to
+
+    https://anaconda.org
+
+and use the search bar at the top of the page.
+
+
+
+(base) C:\Users\RD>conda create -n tensorflow pip python=3.5
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.5.4
+  latest version: 4.5.11
+
+Please update conda by running
+
+    $ conda update -n base conda
+
+
+
+## Package Plan ##
+
+  environment location: C:\Users\RD\AppData\Local\conda\conda\envs\tensorflow
+
+  added / updated specs:
+    - pip
+    - python=3.5
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    wincertstore-0.2           |   py35hfebbdb8_0          13 KB
+    wheel-0.31.1               |           py35_0          81 KB
+    python-3.5.6               |       he025d50_0        18.2 MB
+    pip-10.0.1                 |           py35_0         1.8 MB
+    certifi-2018.8.24          |           py35_1         140 KB
+    setuptools-40.2.0          |           py35_0         597 KB
+    ------------------------------------------------------------
+                                           Total:        20.8 MB
+
+The following NEW packages will be INSTALLED:
+
+    certifi:        2018.8.24-py35_1
+    pip:            10.0.1-py35_0
+    python:         3.5.6-he025d50_0
+    setuptools:     40.2.0-py35_0
+    vc:             14-h0510ff6_3
+    vs2015_runtime: 14.0.25123-3
+    wheel:          0.31.1-py35_0
+    wincertstore:   0.2-py35hfebbdb8_0
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+wincertstore-0.2     |   13 KB | ############################################################################## | 100%
+wheel-0.31.1         |   81 KB | ############################################################################## | 100%
+python-3.5.6         | 18.2 MB | ############################################################################## | 100%
+pip-10.0.1           |  1.8 MB | ############################################################################## | 100%
+certifi-2018.8.24    |  140 KB | ############################################################################## | 100%
+setuptools-40.2.0    |  597 KB | ############################################################################## | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate tensorflow
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+(base) C:\Users\RD>activate tensorflow
+
+(tensorflow) C:\Users\RD>pip install keras
+Collecting keras
+  Downloading https://files.pythonhosted.org/packages/34/7d/b1dedde8af99bd82f20ed7e9697aac0597de3049b1f786aa2aac3b9bd4da/Keras-2.2.2-py2.py3-none-any.whl (299kB)
+    100% |################################| 307kB 26kB/s
+Collecting numpy>=1.9.1 (from keras)
+  Downloading https://files.pythonhosted.org/packages/b7/a7/b99bcbd00fe4d757a940933451a9a795e502e18e4aba15cb09265196db47/numpy-1.15.1-cp35-none-win_amd64.whl (13.5MB)
+    100% |################################| 13.5MB 23kB/s
+Collecting pyyaml (from keras)
+  Downloading https://files.pythonhosted.org/packages/ad/d4/d895fb7ac1b0828151b829a32cefc8a8b58b4499570520b91af20982b880/PyYAML-3.13-cp35-cp35m-win_amd64.whl (205kB)
+    100% |################################| 215kB 36kB/s
+Collecting scipy>=0.14 (from keras)
+  Downloading https://files.pythonhosted.org/packages/84/fc/f0adfaea340732ff25ccba17d1dd6fcc81fda302dbf31212ef7395463720/scipy-1.1.0-cp35-none-win_amd64.whl (31.1MB)
+    100% |################################| 31.1MB 96kB/s
+Collecting keras-preprocessing==1.0.2 (from keras)
+  Downloading https://files.pythonhosted.org/packages/71/26/1e778ebd737032749824d5cba7dbd3b0cf9234b87ab5ec79f5f0403ca7e9/Keras_Preprocessing-1.0.2-py2.py3-none-any.whl
+Collecting keras-applications==1.0.4 (from keras)
+  Downloading https://files.pythonhosted.org/packages/54/90/8f327deaa37a71caddb59b7b4aaa9d4b3e90c0e76f8c2d1572005278ddc5/Keras_Applications-1.0.4-py2.py3-none-any.whl (43kB)
+    100% |################################| 51kB 182kB/s
+Collecting six>=1.9.0 (from keras)
+  Downloading https://files.pythonhosted.org/packages/67/4b/141a581104b1f6397bfa78ac9d43d8ad29a7ca43ea90a2d863fe3056e86a/six-1.11.0-py2.py3-none-any.whl
+Collecting h5py (from keras)
+  Downloading https://files.pythonhosted.org/packages/d0/2c/4572e2e495341e667c89b490ad18ea71a5f9e9fafca06109a9c7db22848b/h5py-2.8.0-cp35-cp35m-win_amd64.whl (2.3MB)
+    100% |################################| 2.3MB 204kB/s
+Installing collected packages: numpy, pyyaml, scipy, six, keras-preprocessing, h5py, keras-applications, keras
+Successfully installed h5py-2.8.0 keras-2.2.2 keras-applications-1.0.4 keras-preprocessing-1.0.2 numpy-1.15.1 pyyaml-3.13 scipy-1.1.0 six-1.11.0
+You are using pip version 10.0.1, however version 18.0 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+(tensorflow) C:\Users\RD>pip install tensorflow
+Collecting tensorflow
+  Downloading https://files.pythonhosted.org/packages/85/7f/eaecb2cb73ca4179a3fed4b0a681327796830e49fde4879c16a1a92c2ab5/tensorflow-1.10.0-cp35-cp35m-win_amd64.whl (37.7MB)
+    100% |################################| 37.7MB 107kB/s
+Collecting protobuf>=3.6.0 (from tensorflow)
+  Downloading https://files.pythonhosted.org/packages/2f/30/2b3caddd3d7e15e919e8b03059ccf0eb9ccef62a9085a9ad92a5823193b7/protobuf-3.6.1-cp35-cp35m-win_amd64.whl (1.1MB)
+    100% |################################| 1.1MB 55kB/s
+Collecting termcolor>=1.1.0 (from tensorflow)
+  Downloading https://files.pythonhosted.org/packages/8a/48/a76be51647d0eb9f10e2a4511bf3ffb8cc1e6b14e9e4fab46173aa79f981/termcolor-1.1.0.tar.gz
+Collecting setuptools<=39.1.0 (from tensorflow)
+  Downloading https://files.pythonhosted.org/packages/8c/10/79282747f9169f21c053c562a0baa21815a8c7879be97abd930dbcf862e8/setuptools-39.1.0-py2.py3-none-any.whl (566kB)
+    100% |################################| 573kB 82kB/s
+Requirement already satisfied: wheel>=0.26 in c:\users\rd\appdata\local\conda\conda\envs\tensorflow\lib\site-packages (from tensorflow) (0.31.1)
+Collecting tensorboard<1.11.0,>=1.10.0 (from tensorflow)
+  Downloading https://files.pythonhosted.org/packages/c6/17/ecd918a004f297955c30b4fffbea100b1606c225dbf0443264012773c3ff/tensorboard-1.10.0-py3-none-any.whl (3.3MB)
+    100% |################################| 3.3MB 131kB/s
+Collecting absl-py>=0.1.6 (from tensorflow)
+  Downloading https://files.pythonhosted.org/packages/a7/86/67f55488ec68982270142c340cd23cd2408835dc4b24bd1d1f1e114f24c3/absl-py-0.4.1.tar.gz (88kB)
+    100% |################################| 92kB 168kB/s
+Collecting grpcio>=1.8.6 (from tensorflow)
+  Downloading https://files.pythonhosted.org/packages/67/72/bb365596cdd2e8c64e3287930846e333b9032038de5c6d5e00042282ff43/grpcio-1.15.0-cp35-cp35m-win_amd64.whl (1.5MB)
+    100% |################################| 1.5MB 159kB/s
+Requirement already satisfied: six>=1.10.0 in c:\users\rd\appdata\local\conda\conda\envs\tensorflow\lib\site-packages (from tensorflow) (1.11.0)
+Collecting numpy<=1.14.5,>=1.13.3 (from tensorflow)
+  Downloading https://files.pythonhosted.org/packages/f3/71/94628784c3f07d4bc0dd38f8753e3f751d66cfd5a6823591179608c27f09/numpy-1.14.5-cp35-none-win_amd64.whl (13.4MB)
+    100% |################################| 13.4MB 242kB/s
+Collecting gast>=0.2.0 (from tensorflow)
+  Downloading https://files.pythonhosted.org/packages/5c/78/ff794fcae2ce8aa6323e789d1f8b3b7765f601e7702726f430e814822b96/gast-0.2.0.tar.gz
+Collecting astor>=0.6.0 (from tensorflow)
+  Downloading https://files.pythonhosted.org/packages/35/6b/11530768cac581a12952a2aad00e1526b89d242d0b9f59534ef6e6a1752f/astor-0.7.1-py2.py3-none-any.whl
+Collecting markdown>=2.6.8 (from tensorboard<1.11.0,>=1.10.0->tensorflow)
+  Downloading https://files.pythonhosted.org/packages/6d/7d/488b90f470b96531a3f5788cf12a93332f543dbab13c423a5e7ce96a0493/Markdown-2.6.11-py2.py3-none-any.whl (78kB)
+    100% |################################| 81kB 308kB/s
+Collecting werkzeug>=0.11.10 (from tensorboard<1.11.0,>=1.10.0->tensorflow)
+  Downloading https://files.pythonhosted.org/packages/20/c4/12e3e56473e52375aa29c4764e70d1b8f3efa6682bef8d0aae04fe335243/Werkzeug-0.14.1-py2.py3-none-any.whl (322kB)
+    100% |################################| 327kB 252kB/s
+Building wheels for collected packages: termcolor, absl-py, gast
+  Running setup.py bdist_wheel for termcolor ... done
+  Stored in directory: C:\Users\RD\AppData\Local\pip\Cache\wheels\7c\06\54\bc84598ba1daf8f970247f550b175aaaee85f68b4b0c5ab2c6
+  Running setup.py bdist_wheel for absl-py ... done
+  Stored in directory: C:\Users\RD\AppData\Local\pip\Cache\wheels\78\a3\a3\689120b95c26b9a21be6584b4b482b0fda0a1b60efd30af558
+  Running setup.py bdist_wheel for gast ... done
+  Stored in directory: C:\Users\RD\AppData\Local\pip\Cache\wheels\9a\1f\0e\3cde98113222b853e98fc0a8e9924480a3e25f1b4008cedb4f
+Successfully built termcolor absl-py gast
+Installing collected packages: setuptools, protobuf, termcolor, markdown, numpy, werkzeug, tensorboard, absl-py, grpcio, gast, astor, tensorflow
+  Found existing installation: setuptools 40.2.0
+    Uninstalling setuptools-40.2.0:
+      Successfully uninstalled setuptools-40.2.0
+  Found existing installation: numpy 1.15.1
+    Uninstalling numpy-1.15.1:
+      Successfully uninstalled numpy-1.15.1
+Successfully installed absl-py-0.4.1 astor-0.7.1 gast-0.2.0 grpcio-1.15.0 markdown-2.6.11 numpy-1.14.5 protobuf-3.6.1 setuptools-39.1.0 tensorboard-1.10.0 tensorflow-1.10.0 termcolor-1.1.0 werkzeug-0.14.1
+You are using pip version 10.0.1, however version 18.0 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+(tensorflow) C:\Users\RD>pip install pandas
+Collecting pandas
+  Downloading https://files.pythonhosted.org/packages/40/17/bd7205edb55e25f8e3caf53e5e44f648a86ff8151715a8d6f89efa4017f5/pandas-0.23.4-cp35-cp35m-win_amd64.whl (7.6MB)
+    100% |################################| 7.6MB 234kB/s
+Collecting python-dateutil>=2.5.0 (from pandas)
+  Downloading https://files.pythonhosted.org/packages/cf/f5/af2b09c957ace60dcfac112b669c45c8c97e32f94aa8b56da4c6d1682825/python_dateutil-2.7.3-py2.py3-none-any.whl (211kB)
+    100% |################################| 215kB 218kB/s
+Collecting pytz>=2011k (from pandas)
+  Downloading https://files.pythonhosted.org/packages/30/4e/27c34b62430286c6d59177a0842ed90dc789ce5d1ed740887653b898779a/pytz-2018.5-py2.py3-none-any.whl (510kB)
+    100% |################################| 512kB 312kB/s
+Requirement already satisfied: numpy>=1.9.0 in c:\users\rd\appdata\local\conda\conda\envs\tensorflow\lib\site-packages (from pandas) (1.14.5)
+Requirement already satisfied: six>=1.5 in c:\users\rd\appdata\local\conda\conda\envs\tensorflow\lib\site-packages (from python-dateutil>=2.5.0->pandas) (1.11.0)
+Installing collected packages: python-dateutil, pytz, pandas
+Successfully installed pandas-0.23.4 python-dateutil-2.7.3 pytz-2018.5
+You are using pip version 10.0.1, however version 18.0 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+(tensorflow) C:\Users\RD>pip install matplotlib
+Collecting matplotlib
+  Downloading https://files.pythonhosted.org/packages/9b/0e/36dd5359554513ef77f195b20c8f52aacfcad6ad637e1f6d7c5df0803cf4/matplotlib-2.2.3-cp35-cp35m-win_amd64.whl (8.7MB)
+    100% |################################| 8.7MB 198kB/s
+Requirement already satisfied: six>=1.10 in c:\users\rd\appdata\local\conda\conda\envs\tensorflow\lib\site-packages (from matplotlib) (1.11.0)
+Collecting pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 (from matplotlib)
+  Downloading https://files.pythonhosted.org/packages/6a/8a/718fd7d3458f9fab8e67186b00abdd345b639976bc7fb3ae722e1b026a50/pyparsing-2.2.0-py2.py3-none-any.whl (56kB)
+    100% |################################| 61kB 218kB/s
+Requirement already satisfied: numpy>=1.7.1 in c:\users\rd\appdata\local\conda\conda\envs\tensorflow\lib\site-packages (from matplotlib) (1.14.5)
+Collecting cycler>=0.10 (from matplotlib)
+  Downloading https://files.pythonhosted.org/packages/f7/d2/e07d3ebb2bd7af696440ce7e754c59dd546ffe1bbe732c8ab68b9c834e61/cycler-0.10.0-py2.py3-none-any.whl
+Collecting kiwisolver>=1.0.1 (from matplotlib)
+  Downloading https://files.pythonhosted.org/packages/67/57/834881c80cd1361792a18b467ac8c1638c224a484956582e51d2f9e16e30/kiwisolver-1.0.1-cp35-none-win_amd64.whl (57kB)
+    100% |################################| 61kB 151kB/s
+Requirement already satisfied: pytz in c:\users\rd\appdata\local\conda\conda\envs\tensorflow\lib\site-packages (from matplotlib) (2018.5)
+Requirement already satisfied: python-dateutil>=2.1 in c:\users\rd\appdata\local\conda\conda\envs\tensorflow\lib\site-packages (from matplotlib) (2.7.3)
+Requirement already satisfied: setuptools in c:\users\rd\appdata\local\conda\conda\envs\tensorflow\lib\site-packages (from kiwisolver>=1.0.1->matplotlib) (39.1.0)
+Installing collected packages: pyparsing, cycler, kiwisolver, matplotlib
+Successfully installed cycler-0.10.0 kiwisolver-1.0.1 matplotlib-2.2.3 pyparsing-2.2.0
+You are using pip version 10.0.1, however version 18.0 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+(tensorflow) C:\Users\RD>pip install numpy
+Requirement already satisfied: numpy in c:\users\rd\appdata\local\conda\conda\envs\tensorflow\lib\site-packages (1.14.5)
+You are using pip version 10.0.1, however version 18.0 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+(tensorflow) C:\Users\RD>pip install scipy
+Requirement already satisfied: scipy in c:\users\rd\appdata\local\conda\conda\envs\tensorflow\lib\site-packages (1.1.0)
+Requirement already satisfied: numpy>=1.8.2 in c:\users\rd\appdata\local\conda\conda\envs\tensorflow\lib\site-packages (from scipy) (1.14.5)
+You are using pip version 10.0.1, however version 18.0 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+(tensorflow) C:\Users\RD>python -m pip install --upgrade pip
+Collecting pip
+  Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x0000004025F8DC50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',)': /packages/5f/25/e52d3f31441505a5f3af41213346e5b6c221c9e086a166f3703d2ddaf940/pip-18.0-py2.py3-none-any.whl
+  Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x0000004025F8D828>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',)': /packages/5f/25/e52d3f31441505a5f3af41213346e5b6c221c9e086a166f3703d2ddaf940/pip-18.0-py2.py3-none-any.whl
+  Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x0000004025F8DB38>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',)': /packages/5f/25/e52d3f31441505a5f3af41213346e5b6c221c9e086a166f3703d2ddaf940/pip-18.0-py2.py3-none-any.whl
+  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x0000004025F8DBA8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',)': /packages/5f/25/e52d3f31441505a5f3af41213346e5b6c221c9e086a166f3703d2ddaf940/pip-18.0-py2.py3-none-any.whl
+  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x0000004025F8D160>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',)': /packages/5f/25/e52d3f31441505a5f3af41213346e5b6c221c9e086a166f3703d2ddaf940/pip-18.0-py2.py3-none-any.whl
+Could not install packages due to an EnvironmentError: HTTPSConnectionPool(host='files.pythonhosted.org', port=443): Max retries exceeded with url: /packages/5f/25/e52d3f31441505a5f3af41213346e5b6c221c9e086a166f3703d2ddaf940/pip-18.0-py2.py3-none-any.whl (Caused by NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x0000004025F8D198>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+
+You are using pip version 10.0.1, however version 18.0 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+(tensorflow) C:\Users\RD>python -m pip install --upgrade pip
+Collecting pip
+  Downloading https://files.pythonhosted.org/packages/5f/25/e52d3f31441505a5f3af41213346e5b6c221c9e086a166f3703d2ddaf940/pip-18.0-py2.py3-none-any.whl (1.3MB)
+    100% |################################| 1.3MB 935kB/s
+Installing collected packages: pip
+  Found existing installation: pip 10.0.1
+    Uninstalling pip-10.0.1:
+      Successfully uninstalled pip-10.0.1
+Successfully installed pip-18.0
+
+(tensorflow) C:\Users\RD>pip install sklearn
+Collecting sklearn
+  Downloading https://files.pythonhosted.org/packages/1e/7a/dbb3be0ce9bd5c8b7e3d87328e79063f8b263b2b1bfa4774cb1147bfcd3f/sklearn-0.0.tar.gz
+Collecting scikit-learn (from sklearn)
+  Downloading https://files.pythonhosted.org/packages/32/b9/46431bd1dff91527daecb3e4e8d28993ef3ab357120115a1a3d17b319f37/scikit_learn-0.19.2-cp35-cp35m-win_amd64.whl (4.3MB)
+    100% |################################| 4.4MB 468kB/s
+Building wheels for collected packages: sklearn
+  Running setup.py bdist_wheel for sklearn ... done
+  Stored in directory: C:\Users\RD\AppData\Local\pip\Cache\wheels\76\03\bb\589d421d27431bcd2c6da284d5f2286c8e3b2ea3cf1594c074
+Successfully built sklearn
+Installing collected packages: scikit-learn, sklearn
+Successfully installed scikit-learn-0.19.2 sklearn-0.0
+
+(tensorflow) C:\Users\RD>pip install jupyter notebooks
+Collecting jupyter
+  Downloading https://files.pythonhosted.org/packages/83/df/0f5dd132200728a86190397e1ea87cd76244e42d39ec5e88efd25b2abd7e/jupyter-1.0.0-py2.py3-none-any.whl
+Collecting notebooks
+  Could not find a version that satisfies the requirement notebooks (from versions: )
+No matching distribution found for notebooks
+
+(tensorflow) C:\Users\RD>pip install utils
+Collecting utils
+  Downloading https://files.pythonhosted.org/packages/9b/de/9ffaf89be661b32d1e0cff05e1af5e4fc2d608c47498975e94aca219aed4/utils-0.9.0-py2.py3-none-any.whl
+Installing collected packages: utils
+Successfully installed utils-0.9.0
+
+(tensorflow) C:\Users\RD>pip install jupyter notebook
+Collecting jupyter
+  Using cached https://files.pythonhosted.org/packages/83/df/0f5dd132200728a86190397e1ea87cd76244e42d39ec5e88efd25b2abd7e/jupyter-1.0.0-py2.py3-none-any.whl
+Collecting notebook
+  Downloading https://files.pythonhosted.org/packages/5e/7c/7fd8e9584779d65dfcad9fa2e09c76131a41f999f853a9c7026ed8585586/notebook-5.6.0-py2.py3-none-any.whl (8.9MB)
+    100% |################################| 8.9MB 177kB/s
+Collecting nbconvert (from jupyter)
+  Downloading https://files.pythonhosted.org/packages/b5/bb/94c493051d60e5b9c0f7f9a368b324201818c1b1c4cae85d1e49a41846c7/nbconvert-5.4.0-py2.py3-none-any.whl (405kB)
+    100% |################################| 409kB 119kB/s
+Collecting ipykernel (from jupyter)
+  Downloading https://files.pythonhosted.org/packages/7a/de/a03a5c1f8b743675add3c98f1eb877c67bb29c5196ee6ce54e9c839d23cc/ipykernel-4.9.0-py3-none-any.whl (110kB)
+    100% |################################| 112kB 64kB/s
+Collecting qtconsole (from jupyter)
+  Downloading https://files.pythonhosted.org/packages/ff/1f/b340d52dee46fbbe8a097dce76d1197258bb599692159d94c80921fef9eb/qtconsole-4.4.1-py2.py3-none-any.whl (112kB)
+    100% |################################| 112kB 54kB/s
+Collecting jupyter-console (from jupyter)
+  Downloading https://files.pythonhosted.org/packages/77/82/6469cd7fccf7958cbe5dce2e623f1e3c5e27f1bb1ad36d90519bc2d5d370/jupyter_console-5.2.0-py2.py3-none-any.whl
+Collecting ipywidgets (from jupyter)
+  Downloading https://files.pythonhosted.org/packages/ea/c5/0482342559f0fd24909572fe00bb59b2bae98b22d90aac7950f51a98f555/ipywidgets-7.4.1-py2.py3-none-any.whl (110kB)
+    100% |################################| 112kB 52kB/s
+Collecting jupyter-client>=5.2.0 (from notebook)
+  Downloading https://files.pythonhosted.org/packages/94/dd/fe6c4d683b09eb05342bd2816b7779663f71762b4fa9c2d5203d35d17354/jupyter_client-5.2.3-py2.py3-none-any.whl (89kB)
+    100% |################################| 92kB 24kB/s
+Collecting prometheus-client (from notebook)
+  Downloading https://files.pythonhosted.org/packages/a1/b1/08de091b392fec31da9bd3f5edd9214ec1c6931dd81641610ac20f3ff934/prometheus_client-0.3.1.tar.gz
+Collecting tornado>=4 (from notebook)
+  Downloading https://files.pythonhosted.org/packages/81/72/9e8ac9205157c9221d00df4388c21895b049dff053f38d12045265d338da/tornado-5.1-cp35-cp35m-win_amd64.whl (450kB)
+    100% |################################| 450kB 211kB/s
+Collecting nbformat (from notebook)
+  Downloading https://files.pythonhosted.org/packages/da/27/9a654d2b6cc1eaa517d1c5a4405166c7f6d72f04f6e7eea41855fe808a46/nbformat-4.4.0-py2.py3-none-any.whl (155kB)
+    100% |################################| 163kB 436kB/s
+Collecting terminado>=0.8.1 (from notebook)
+  Downloading https://files.pythonhosted.org/packages/2e/20/a26211a24425923d46e1213b376a6ee60dc30bcdf1b0c345e2c3769deb1c/terminado-0.8.1-py2.py3-none-any.whl
+Collecting ipython-genutils (from notebook)
+  Downloading https://files.pythonhosted.org/packages/fa/bc/9bd3b5c2b4774d5f33b2d544f1460be9df7df2fe42f352135381c347c69a/ipython_genutils-0.2.0-py2.py3-none-any.whl
+Collecting traitlets>=4.2.1 (from notebook)
+  Downloading https://files.pythonhosted.org/packages/93/d6/abcb22de61d78e2fc3959c964628a5771e47e7cc60d53e9342e21ed6cc9a/traitlets-4.3.2-py2.py3-none-any.whl (74kB)
+    100% |################################| 81kB 194kB/s
+Collecting jinja2 (from notebook)
+  Downloading https://files.pythonhosted.org/packages/7f/ff/ae64bacdfc95f27a016a7bed8e8686763ba4d277a78ca76f32659220a731/Jinja2-2.10-py2.py3-none-any.whl (126kB)
+    100% |################################| 133kB 262kB/s
+Collecting pyzmq>=17 (from notebook)
+  Downloading https://files.pythonhosted.org/packages/a5/55/675eda157cebb0fd5e08d049579859b04877f99a20b63301da7e8f936a5d/pyzmq-17.1.2-cp35-cp35m-win_amd64.whl (988kB)
+    100% |################################| 993kB 211kB/s
+Collecting Send2Trash (from notebook)
+  Downloading https://files.pythonhosted.org/packages/49/46/c3dc27481d1cc57b9385aff41c474ceb7714f7935b1247194adae45db714/Send2Trash-1.5.0-py3-none-any.whl
+Collecting jupyter-core>=4.4.0 (from notebook)
+  Downloading https://files.pythonhosted.org/packages/1d/44/065d2d7bae7bebc06f1dd70d23c36da8c50c0f08b4236716743d706762a8/jupyter_core-4.4.0-py2.py3-none-any.whl (126kB)
+    100% |################################| 133kB 182kB/s
+Collecting defusedxml (from nbconvert->jupyter)
+  Downloading https://files.pythonhosted.org/packages/87/1c/17f3e3935a913dfe2a5ca85fa5ccbef366bfd82eb318b1f75dadbf0affca/defusedxml-0.5.0-py2.py3-none-any.whl
+Collecting mistune>=0.8.1 (from nbconvert->jupyter)
+  Downloading https://files.pythonhosted.org/packages/c8/8c/87f4d359438ba0321a2ae91936030110bfcc62fef752656321a72b8c1af9/mistune-0.8.3-py2.py3-none-any.whl
+Collecting bleach (from nbconvert->jupyter)
+  Downloading https://files.pythonhosted.org/packages/94/aa/0f7ce53f8688bb9f80c0cffacc3964ddfe08321c509c0bfe5062848951f9/bleach-2.1.4-py2.py3-none-any.whl
+Collecting entrypoints>=0.2.2 (from nbconvert->jupyter)
+  Downloading https://files.pythonhosted.org/packages/cc/8b/4eefa9b47f1910b3d2081da67726b066e379b04ca897acfe9f92bac56147/entrypoints-0.2.3-py2.py3-none-any.whl
+Collecting pandocfilters>=1.4.1 (from nbconvert->jupyter)
+  Downloading https://files.pythonhosted.org/packages/4c/ea/236e2584af67bb6df960832731a6e5325fd4441de001767da328c33368ce/pandocfilters-1.4.2.tar.gz
+Collecting testpath (from nbconvert->jupyter)
+  Downloading https://files.pythonhosted.org/packages/15/19/d7bc380c479a184e4a5a9ce516e4e2a773165f89b445f7cdced83d94de25/testpath-0.3.1-py2.py3-none-any.whl (161kB)
+    100% |################################| 163kB 225kB/s
+Collecting pygments (from nbconvert->jupyter)
+  Downloading https://files.pythonhosted.org/packages/02/ee/b6e02dc6529e82b75bb06823ff7d005b141037cb1416b10c6f00fc419dca/Pygments-2.2.0-py2.py3-none-any.whl (841kB)
+    100% |################################| 849kB 198kB/s
+Collecting ipython>=4.0.0 (from ipykernel->jupyter)
+  Downloading https://files.pythonhosted.org/packages/f7/62/2fef7db3a7b75e8099c3d9db2630ae5ba0b9eefefd91f7497862393d90e8/ipython-6.5.0-py3-none-any.whl (748kB)
+    100% |################################| 757kB 546kB/s
+Collecting prompt-toolkit<2.0.0,>=1.0.0 (from jupyter-console->jupyter)
+  Downloading https://files.pythonhosted.org/packages/04/d1/c6616dd03701e7e2073f06d5c3b41b012256e42b72561f16a7bd86dd7b43/prompt_toolkit-1.0.15-py3-none-any.whl (247kB)
+    100% |################################| 256kB 468kB/s
+Collecting widgetsnbextension~=3.4.0 (from ipywidgets->jupyter)
+  Downloading https://files.pythonhosted.org/packages/3c/9a/9a690e18e335fc4470a2fa38163774940159375798ba6cce043d5cd94bae/widgetsnbextension-3.4.1-py2.py3-none-any.whl (2.2MB)
+    100% |################################| 2.2MB 252kB/s
+Requirement already satisfied: python-dateutil>=2.1 in c:\users\rd\appdata\local\conda\conda\envs\tensorflow\lib\site-packages (from jupyter-client>=5.2.0->notebook) (2.7.3)
+Collecting jsonschema!=2.5.0,>=2.4 (from nbformat->notebook)
+  Downloading https://files.pythonhosted.org/packages/77/de/47e35a97b2b05c2fadbec67d44cfcdcd09b8086951b331d82de90d2912da/jsonschema-2.6.0-py2.py3-none-any.whl
+Collecting pywinpty>=0.5; os_name == "nt" (from terminado>=0.8.1->notebook)
+  Downloading https://files.pythonhosted.org/packages/3a/42/cc2df37d8c64f7202cd95e9e3ae823ae02e8bf68291f8a8a1281c4ea26ae/pywinpty-0.5.4-cp35-cp35m-win_amd64.whl (1.3MB)
+    100% |################################| 1.3MB 3.3MB/s
+Requirement already satisfied: six in c:\users\rd\appdata\local\conda\conda\envs\tensorflow\lib\site-packages (from traitlets>=4.2.1->notebook) (1.11.0)
+Collecting decorator (from traitlets>=4.2.1->notebook)
+  Downloading https://files.pythonhosted.org/packages/bc/bb/a24838832ba35baf52f32ab1a49b906b5f82fb7c76b2f6a7e35e140bac30/decorator-4.3.0-py2.py3-none-any.whl
+Collecting MarkupSafe>=0.23 (from jinja2->notebook)
+  Downloading https://files.pythonhosted.org/packages/4d/de/32d741db316d8fdb7680822dd37001ef7a448255de9699ab4bfcbdf4172b/MarkupSafe-1.0.tar.gz
+Collecting html5lib!=1.0b1,!=1.0b2,!=1.0b3,!=1.0b4,!=1.0b5,!=1.0b6,!=1.0b7,!=1.0b8,>=0.99999999pre (from bleach->nbconvert->jupyter)
+  Downloading https://files.pythonhosted.org/packages/a5/62/bbd2be0e7943ec8504b517e62bab011b4946e1258842bc159e5dfde15b96/html5lib-1.0.1-py2.py3-none-any.whl (117kB)
+    100% |################################| 122kB 177kB/s
+Requirement already satisfied: setuptools>=18.5 in c:\users\rd\appdata\local\conda\conda\envs\tensorflow\lib\site-packages (from ipython>=4.0.0->ipykernel->jupyter) (39.1.0)
+Collecting colorama; sys_platform == "win32" (from ipython>=4.0.0->ipykernel->jupyter)
+  Downloading https://files.pythonhosted.org/packages/db/c8/7dcf9dbcb22429512708fe3a547f8b6101c0d02137acbd892505aee57adf/colorama-0.3.9-py2.py3-none-any.whl
+Collecting pickleshare (from ipython>=4.0.0->ipykernel->jupyter)
+  Downloading https://files.pythonhosted.org/packages/9f/17/daa142fc9be6b76f26f24eeeb9a138940671490b91cb5587393f297c8317/pickleshare-0.7.4-py2.py3-none-any.whl
+Collecting backcall (from ipython>=4.0.0->ipykernel->jupyter)
+  Downloading https://files.pythonhosted.org/packages/84/71/c8ca4f5bb1e08401b916c68003acf0a0655df935d74d93bf3f3364b310e0/backcall-0.1.0.tar.gz
+Collecting simplegeneric>0.8 (from ipython>=4.0.0->ipykernel->jupyter)
+  Downloading https://files.pythonhosted.org/packages/3d/57/4d9c9e3ae9a255cd4e1106bb57e24056d3d0709fc01b2e3e345898e49d5b/simplegeneric-0.8.1.zip
+Collecting win-unicode-console>=0.5; sys_platform == "win32" and python_version < "3.6" (from ipython>=4.0.0->ipykernel->jupyter)
+  Downloading https://files.pythonhosted.org/packages/89/8d/7aad74930380c8972ab282304a2ff45f3d4927108bb6693cabcc9fc6a099/win_unicode_console-0.5.zip
+Collecting jedi>=0.10 (from ipython>=4.0.0->ipykernel->jupyter)
+  Downloading https://files.pythonhosted.org/packages/3d/68/8bbf0ef969095a13ba0d4c77c1945bd86e9811960d052510551d29a2f23b/jedi-0.12.1-py2.py3-none-any.whl (174kB)
+    100% |################################| 184kB 312kB/s
+Collecting wcwidth (from prompt-toolkit<2.0.0,>=1.0.0->jupyter-console->jupyter)
+  Downloading https://files.pythonhosted.org/packages/7e/9f/526a6947247599b084ee5232e4f9190a38f398d7300d866af3ab571a5bfe/wcwidth-0.1.7-py2.py3-none-any.whl
+Collecting webencodings (from html5lib!=1.0b1,!=1.0b2,!=1.0b3,!=1.0b4,!=1.0b5,!=1.0b6,!=1.0b7,!=1.0b8,>=0.99999999pre->bleach->nbconvert->jupyter)
+  Downloading https://files.pythonhosted.org/packages/f4/24/2a3e3df732393fed8b3ebf2ec078f05546de641fe1b667ee316ec1dcf3b7/webencodings-0.5.1-py2.py3-none-any.whl
+Collecting parso>=0.3.0 (from jedi>=0.10->ipython>=4.0.0->ipykernel->jupyter)
+  Downloading https://files.pythonhosted.org/packages/09/51/9c48a46334be50c13d25a3afe55fa05c445699304c5ad32619de953a2305/parso-0.3.1-py2.py3-none-any.whl (88kB)
+    100% |################################| 92kB 168kB/s
+Building wheels for collected packages: prometheus-client, pandocfilters, MarkupSafe, backcall, simplegeneric, win-unicode-console
+  Running setup.py bdist_wheel for prometheus-client ... done
+  Stored in directory: C:\Users\RD\AppData\Local\pip\Cache\wheels\04\6b\a4\4ccef2edcc797b5553edc6c8bed4d219dafdb019e225c2c348
+  Running setup.py bdist_wheel for pandocfilters ... done
+  Stored in directory: C:\Users\RD\AppData\Local\pip\Cache\wheels\39\01\56\f1b08a6275acc59e846fa4c1e1b65dbc1919f20157d9e66c20
+  Running setup.py bdist_wheel for MarkupSafe ... done
+  Stored in directory: C:\Users\RD\AppData\Local\pip\Cache\wheels\33\56\20\ebe49a5c612fffe1c5a632146b16596f9e64676768661e4e46
+  Running setup.py bdist_wheel for backcall ... done
+  Stored in directory: C:\Users\RD\AppData\Local\pip\Cache\wheels\98\b0\dd\29e28ff615af3dda4c67cab719dd51357597eabff926976b45
+  Running setup.py bdist_wheel for simplegeneric ... done
+  Stored in directory: C:\Users\RD\AppData\Local\pip\Cache\wheels\a9\28\53\f24776b4c5bcbe91aaf1f1e247bd6fadd17191aa12fac63902
+  Running setup.py bdist_wheel for win-unicode-console ... done
+  Stored in directory: C:\Users\RD\AppData\Local\pip\Cache\wheels\f5\4d\3b\e107271478166f21e8bdf02f139c93124b28c546df6f237192
+Successfully built prometheus-client pandocfilters MarkupSafe backcall simplegeneric win-unicode-console
+Installing collected packages: jsonschema, ipython-genutils, decorator, traitlets, jupyter-core, nbformat, defusedxml, mistune, webencodings, html5lib, bleach, entrypoints, pandocfilters, testpath, pygments, MarkupSafe, jinja2, nbconvert, pyzmq, tornado, jupyter-client, colorama, wcwidth, prompt-toolkit, pickleshare, backcall, simplegeneric, win-unicode-console, parso, jedi, ipython, ipykernel, prometheus-client, pywinpty, terminado, Send2Trash, notebook, qtconsole, jupyter-console, widgetsnbextension, ipywidgets, jupyter
+Successfully installed MarkupSafe-1.0 Send2Trash-1.5.0 backcall-0.1.0 bleach-2.1.4 colorama-0.3.9 decorator-4.3.0 defusedxml-0.5.0 entrypoints-0.2.3 html5lib-1.0.1 ipykernel-4.9.0 ipython-6.5.0 ipython-genutils-0.2.0 ipywidgets-7.4.1 jedi-0.12.1 jinja2-2.10 jsonschema-2.6.0 jupyter-1.0.0 jupyter-client-5.2.3 jupyter-console-5.2.0 jupyter-core-4.4.0 mistune-0.8.3 nbconvert-5.4.0 nbformat-4.4.0 notebook-5.6.0 pandocfilters-1.4.2 parso-0.3.1 pickleshare-0.7.4 prometheus-client-0.3.1 prompt-toolkit-1.0.15 pygments-2.2.0 pywinpty-0.5.4 pyzmq-17.1.2 qtconsole-4.4.1 simplegeneric-0.8.1 terminado-0.8.1 testpath-0.3.1 tornado-5.1 traitlets-4.3.2 wcwidth-0.1.7 webencodings-0.5.1 widgetsnbextension-3.4.1 win-unicode-console-0.5
+
+(tensorflow) C:\Users\RD>
